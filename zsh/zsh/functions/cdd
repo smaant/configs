@@ -1,0 +1,4 @@
+#autoload
+
+cd "$SRC/$1"
+return 1
