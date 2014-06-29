@@ -1,4 +1,22 @@
 smaant_test*
+
+# Intellij IDEA
 .idea/
 *.iml
+
+# Maven
 target/
+
+# OSX
+.DS_Store
+
+# Scala sbt
+.cache/
+.history/
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
