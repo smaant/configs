@@ -29,9 +29,12 @@ zstyle ':completion:*' menu select=2
 # zstyle ':completion:*' group-name ”
 
 #export M2_HOME=/usr/local/Cellar/maven/3.2.2
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+export M2_HOME=/opt/local/share/java/maven3
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
-alias mvn-hh='mvn'
+export EDITOR=/usr/bin/vim
+
+alias mvn='mvn-color'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
