@@ -14,12 +14,6 @@ export WORKON_HOME=~/Envs
 # add custom completion scripts
 fpath=(~/.zsh/functions $fpath)
 
-autoload cdd
-
-# compsys initialization
-autoload -U compinit
-compinit
-
 # show completion menu when number of options is at least 2
 zstyle ':completion:*' menu select=2
 # zstyle ':completion:*' verbose yes
