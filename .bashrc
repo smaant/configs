@@ -86,8 +86,6 @@ alias l='ls -AlG'
 
 alias readlink=greadlink
 
-alias gocnr='cd ~/Documents/Click_n_Read/src/'
-alias gosrc='cd ~/Documents/src'
 alias ..='cd ..'
 alias ...='cd ..;cd ..'
 alias ....='cd ..;cd ..;cd ..'
@@ -124,18 +122,10 @@ export PATH=$PATH:/Developer/Tools/depot_tools
 
 export EDITOR='subl -w'
 
-##
-# Your previous /Users/smaant/.bash_profile file was backed up as /Users/smaant/.bash_profile.macports-saved_2011-07-13_at_22:04:12
-##
-
-# MacPorts Installer addition on 2011-07-13_at_22:04:12: adding an appropriate PATH variable for use with MacPorts.
 export PATH=~/bin:/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
 
 # For Octave
 export PATH=$PATH:/usr/X11R6/bin
 export CFLAGS="-I/usr/local/include"
 export CPPFLAGS="-I/usr/local/include -DH5_USE_16_API"
 export LDFLAGS="-L/usr/local/lib"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

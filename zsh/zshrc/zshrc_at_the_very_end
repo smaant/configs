@@ -31,4 +31,6 @@ export EDITOR=/usr/bin/vim
 
 alias mvn='mvn-color'
 
+alias with_java_7='JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
