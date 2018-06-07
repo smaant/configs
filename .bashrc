@@ -129,3 +129,5 @@ export PATH=$PATH:/usr/X11R6/bin
 export CFLAGS="-I/usr/local/include"
 export CPPFLAGS="-I/usr/local/include -DH5_USE_16_API"
 export LDFLAGS="-L/usr/local/lib"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

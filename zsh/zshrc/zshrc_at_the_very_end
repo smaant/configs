@@ -1,11 +1,20 @@
-
 alias -g g="| grep"
 alias -g l="| less"
+
+alias dm="docker-machine"
+activate-dm() { eval $(docker-machine env $1) }
+alias dt="docker logs --tail=10 -f"
+alias dk="docker"
+alias dc="docker-compose"
+
+alias tf="terraform"
+
+bindkey \^U backward-kill-line
 
 export SRC=~/src
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/smaant/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mongo-2.0.2/bin:/Developer/Tools/depot_tools:/usr/X11R6/bin:$HOME/.rvm/bin
+#export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/smaant/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mongo-2.0.2/bin:/Developer/Tools/depot_tools:/usr/X11R6/bin:$HOME/.rvm/bin
 
 export WORKON_HOME=~/Envs
 # source /usr/local/bin/virtualenvwrapper.sh
@@ -23,14 +32,14 @@ zstyle ':completion:*' menu select=2
 # zstyle ':completion:*' group-name ”
 
 #export M2_HOME=/usr/local/Cellar/maven/3.2.2
-export M2_HOME=/opt/local/share/java/maven3
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+#export M2_HOME=/opt/local/share/java/maven3
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
 export EDITOR=/usr/bin/vim
 
-alias mvn='mvn-color'
+#alias mvn='mvn-color'
 
-alias with_java_7='JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
+#alias with_java_7='JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+alias graylog-forward='ssh -f -N -L 9000:graylog-primary.infra.circleci.com:80 jump.circleci.com'
